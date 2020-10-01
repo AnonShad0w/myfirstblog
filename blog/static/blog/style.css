@@ -54,7 +54,3 @@ h1, h2, h3, h4 {
 .comment-form textarea, .comment-form input {
     width: 100%;
 }
-
-.comment {
-    border: 1px solid blue;
-}

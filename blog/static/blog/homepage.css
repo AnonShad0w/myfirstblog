@@ -2,17 +2,6 @@ body {
     padding: 15px;
 }
 
-h1 {
-    color: #000000;
-    font-family: 'Ubuntu';
-}
-
-p  {
-    color: #007BE7;
-    font-family: 'Lobster';
-    font-size: 14pt;
-}
-
 .page-header {
     background-color: #00FFEE;
     margin-top: 0;
@@ -23,6 +12,10 @@ p  {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+}
+
+.page-header h1 {
+    font-family: 'Lobster', cursive;
 }
 
 .content {
@@ -37,3 +30,19 @@ h4 {
     float: right;
 }
 
+.app-links {
+    margin: auto;
+    width: 50%;
+    display:block;
+    text-align: center;
+}
+
+.home-message {
+    margin: auto;
+    width: 50%;
+}
+
+.login-logout-buttons {
+    display:block;
+    text-align: center;
+}
