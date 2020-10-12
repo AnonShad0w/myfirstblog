@@ -92,7 +92,7 @@ def new_poll(request):
                     choice = inline_form.save(commit=False)
                     choice.question = new_poll
                     choice.save()
-            return render(request, 'polls/index.html', {})
+            return redirect('/polls/')
     else:
         form = QuestionForm() # this will return the errors in your form
         formset = ChoiceFormSet()

@@ -46,12 +46,6 @@ def post_edit(request, pk):
 		else:
 			form = PostForm(instance=post)
 	else:
-		"""
-		return render(request, 'blog/post_detail.html', {
-                'post': post,
-                'error_message': "You are not the post author.",
-            })
-        """
 		return HttpResponse("You are not the post author.", content_type="text/plain")
 
 	return render(request, 'blog/post_edit.html', {'form': form})
@@ -158,7 +152,8 @@ def delete_comment(request, pk, comment_id):
 	return render(request, 'blog/delete_comment.html', {'form': form})
 	
 def like_post(request, pk):
-	pass		
+	thumbs_up = get_object_or_404(Post, pk=pk)
+	print(thumbs_up)		
 	
 def like_comment(request, pk, comment_id):
 	pass		
